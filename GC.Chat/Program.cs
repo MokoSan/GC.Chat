@@ -172,6 +172,8 @@ void HandleAnalyzeProcess(string input)
 }
 
 AnsiConsole.Markup("[green bold underline] Welcome to the GC Chat! \n[/]");
+AnsiConsole.Markup("[green bold] To start a GC investigation, take a top level GC trace using PerfView with the following command: `perfview /GCCollectOnly /AcceptEULA /nogui collect` and press 's' after you have collected the trace. \n[/]");
+AnsiConsole.Markup("[green bold] \n Or call one of the following commands: \n[/]"); 
 AnsiConsole.Markup("[green bold] 1. Ask a GC related question to an AI bot. \n[/]");
 AnsiConsole.Markup("[green bold] 2. Enter /analyze and then specify a path to a trace to get a top level GC overview. \n[/]");
 AnsiConsole.Markup("[green bold] 3. Enter /analyze-process and then specify a path to a trace and a process name to get a top level GC overview. \n[/]");
