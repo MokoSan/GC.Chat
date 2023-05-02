@@ -183,12 +183,13 @@ while (true)
     AnsiConsole.Write("\n>> ");
     string? input = Console.ReadLine();
 
+    string[] split = input?.Split(" ");
+
+
     if (string.IsNullOrEmpty(input) || input.Length == 0)
     {
         continue;
     }
-
-    string[] split = input.Split(" ");
 
     else if (split[0] == "/analyze")
     {
