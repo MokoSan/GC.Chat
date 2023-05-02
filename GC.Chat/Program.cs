@@ -185,7 +185,6 @@ while (true)
 
     string[] split = input?.Split(" ");
 
-
     if (string.IsNullOrEmpty(input) || input.Length == 0)
     {
         continue;
